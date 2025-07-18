@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+<style>
+    ::cue {
+        color: yellow;
+        background-color: black;
+    }
+
+    body{
+        background-image: url(img/PLACA.webp);
+       background-repeat: repeat;
+       background-size: cover;
+       background-position: center;
+    }
+
+    }
+</style>
+
+</head>
+<body>
+
+   <video controls autoplay muted loop>
+    <source src="media/media/video.mp4" type="audio/mp4">
+    <source src="media/media/video.ogv" type="audio/ogg" >         mimetype - nome tecnico
+    <source src="media/media/video.webm" type="audio/webm">
+    <track src="media/media/track.pt.vtt" kind="captions" srclang="pt" label="Português" default> com default no final a legenda aparece direto. kind - é um atributo - e o idioma que vai aparecer para usuario
+    <track src="media/media/track.en.vtt" kind="captions" srclang="en" label="English"> 
+    <p>seu browser não da suporte para esse video</p> esse texto é chamado de fallback - normalmente é dificil.
+         
+
+    
+</body>
+</html>
